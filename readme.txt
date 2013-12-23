@@ -12,7 +12,7 @@ Stable tag: 1.0
 Version: 1.0
 License: GPLv2 or later
 
-#1 most powerful attention-grabbing widget that knocks on your visitor's screen and shows them your most important message ...in 5 seconds!
+#1 attention-grabbing widget that knocks on your visitor's screen and shows them your most important message ...in 5 seconds!
 
 == Description ==
 
@@ -23,9 +23,11 @@ Here are just few of the amazing features:
 - Enter seconds when you want the video start playing.
 - Specify where you want wizScriber appear.
 
-<a href="http://www.wizmotions.com/368/seven-reasons-why-whiteboard-animation-videos-convert-more-viewers-into-buyers/">Check out the demo here</a> and see what happens in 5 seconds after you load the page.
-
 Just copy [wizScribe] and paste it in the page or post you want it to appear.
+
+= Demo  =
+
+<a href="http://www.wizmotions.com/368/seven-reasons-why-whiteboard-animation-videos-convert-more-viewers-into-buyers/">Check out the demo here</a> and see what happens in 5 seconds after you load the page.
 
 What's in the next free version?
 
@@ -39,7 +41,6 @@ What's in the next free version?
 
 
 == Installation ==
-
 
 
 1. Download and unzip the current version of the wizScriber plugin.
