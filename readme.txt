@@ -12,7 +12,7 @@ Stable tag: 1.0
 Version: 1.0
 License: GPLv2 or later
 
-#1 most powerful atention-grabbing widget that knocks on your visitor's screen and shows them your most important message ...in 5 seconds!
+#1 most powerful attention-grabbing widget that knocks on your visitor's screen and shows them your most important message ...in 5 seconds!
 
 == Description ==
 
