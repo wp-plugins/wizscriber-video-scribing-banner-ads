@@ -12,9 +12,24 @@ Stable tag: 1.1
 Version: 1.1
 License: GPLv2 or later
 
-#1 attention-grabbing widget that knocks on your visitor's screen and shows them your most important message ...in 5 seconds!
+#1 attention-grabbing animation ads that knocks on your visitor's screen and shows them your most important message ...in 5 seconds!
 
 == Description ==
+
+wizScriber is a unique plugin to create engaging whiteboard animated video messages quickly and easily without technical or design skills. It’s simple, handy and you can use it to grab your visitors’ attention.
+
+Best of all, we make this video scribing plugin available for you free.
+
+You can use it to:
+- Show visitors your most important message in 5 seconds.
+- Promote product offers or discount coupons
+- Ask visitor to contact you or to check out your Facebook Page.
+- Gain credibility in the form of live drawings by an artist.
+
+
+= Demo  =
+
+<a href="http://www.wizmotions.com/368/seven-reasons-why-whiteboard-animation-videos-convert-more-viewers-into-buyers/">Check out the demo here</a> and see what happens in 5 seconds after you load the page.
 
 Here are just few of the amazing features:
 
@@ -24,10 +39,6 @@ Here are just few of the amazing features:
 - Specify where you want wizScriber appear.
 
 Just copy [wizScribe] and paste it in the page or post you want it to appear.
-
-= Demo  =
-
-<a href="http://www.wizmotions.com/368/seven-reasons-why-whiteboard-animation-videos-convert-more-viewers-into-buyers/">Check out the demo here</a> and see what happens in 5 seconds after you load the page.
 
 What's in the next free version?
 
