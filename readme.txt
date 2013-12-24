@@ -12,7 +12,7 @@ Stable tag: 1.1
 Version: 1.1
 License: GPLv2 or later
 
-#1 attention-grabbing animation ads that knocks on your visitor's screen and shows them your most important message ...in 5 seconds!
+Create attention-grabbing animation ads that knocks on your visitor's screen and shows them your most important message ...in 5 seconds!
 
 == Description ==
 
@@ -21,6 +21,7 @@ wizScriber is a unique plugin to create engaging whiteboard animated video messa
 Best of all, we make this video scribing plugin available for you free.
 
 You can use it to:
+
 - Show visitors your most important message in 5 seconds.
 - Promote product offers or discount coupons
 - Ask visitor to contact you or to check out your Facebook Page.
