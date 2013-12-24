@@ -16,13 +16,11 @@ Create attention-grabbing animation ads that knocks on your visitor's screen and
 
 == Description ==
 
-wizScriber is a unique plugin to create engaging whiteboard animated video messages quickly and easily without technical or design skills. It’s simple, handy and you can use it to grab your visitors’ attention.
-
-Best of all, we make this video scribing plugin available for you free.
+wizScriber is a unique plugin to create engaging whiteboard animated video messages quickly and easily without technical or design skills. It’s simple, handy and you can use it to grab your visitors’ attention. Best of all, we make this video scribing plugin available for you free.
 
 You can use it to:
 
-- Show visitors your most important message in 5 seconds.
+- Show visitors your most important message.
 - Promote product offers or discount coupons
 - Ask visitor to contact you or to check out your Facebook Page.
 - Gain credibility in the form of live drawings by an artist.
