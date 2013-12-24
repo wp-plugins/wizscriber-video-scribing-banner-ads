@@ -59,6 +59,9 @@ How Do I Use It? Specify your settings and just copy [wizScribe] and paste in th
 
 == Changelog ==
 
+= 1.0.1 =
+
+Fixing bugs
 
 
 = 1.0 =
