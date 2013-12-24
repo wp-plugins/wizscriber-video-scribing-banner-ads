@@ -1,7 +1,7 @@
-﻿=== wizScriber Ads - Whiteboard Animation Software for WP ===
+﻿=== wizScriber - Whiteboard Animation Ad Software ===
 
 Contributors: socratous139
-Plugin Name: wizScriber Ads - Whiteboard Animation Software for WP
+Plugin Name: wizScriber Ads - Whiteboard Animation Ad Software
 Plugin URI: http://www.wizMotions.com
 Tags: video scribing, whiteboard animation software, whiteboard, animation, software, banner, ads, marketing, video, banners, floating, wordpress
 Author URI: http://www.imwenterprises.com
