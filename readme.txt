@@ -8,8 +8,8 @@ Author URI: http://www.imwenterprises.com
 Author: IMW Enterprises Ltd.
 Requires at least: 3.4.2
 Tested up to: 3.8
-Stable tag: 1.0.1
-Version: 1.0.1
+Stable tag: 1.1
+Version: 1.1
 License: GPLv2 or later
 
 #1 attention-grabbing widget that knocks on your visitor's screen and shows them your most important message ...in 5 seconds!
