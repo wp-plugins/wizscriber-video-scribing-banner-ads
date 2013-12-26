@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: wizScriber - Video Scribing Banner Ads
-Plugin URI: http://www.imwenterprises.com/wizScribe
+Plugin URI: http://www.wizMotions.com
 Description: Attention-grabbing widget that knocks on your visitor's screen and shows them your most important message ...in 5 seconds!
 Version: 1.1
 Author: IMW Enterprises
