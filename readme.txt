@@ -1,7 +1,7 @@
-﻿=== wizScriber™ Whiteboard Animation Ad Software for WP ===
+﻿=== wizScriber™ Whiteboard Animation Software - Create Doodle Ads In Few Clicks ===
 
 Contributors: socratous139
-Plugin Name: wizScriber™ Whiteboard Animation Ad Software for WordPress
+Plugin Name: wizScriber™ Whiteboard Animation Software - Create Doodle Ads In Few Clicks
 Plugin URI: http://www.wizMotions.com
 Tags: whiteboard animation, video scribing, video, scribe, ad, ads, advertise, advertising, advertisment, marketing, banner, banners, page, plugin, Post, promotion, sidebar, tool, widget, software, doodle, animation
 Author URI: http://www.imwenterprises.com
