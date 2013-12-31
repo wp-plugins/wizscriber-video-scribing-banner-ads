@@ -41,9 +41,9 @@ Just copy [wizScribe] and paste it in the page or post you want it to appear.
 
 What's in the next free version?
 
-- Add unlimited messages
-- Drop down list to select the page/post right away.
-- And more.
+- Ability to create multiple ad campaigns.
+- Add unlimited advertising messages/slides.
+- And many more.
 
 = Learn More About wizMotions  =
 
