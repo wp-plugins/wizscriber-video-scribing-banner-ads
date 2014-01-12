@@ -85,6 +85,7 @@ wizScriber Plugin is now launched
 
 
 1.  Plugin Settings with Preview
+2.  wizScriber in action (Knocking to grab attention)
 
 
 
