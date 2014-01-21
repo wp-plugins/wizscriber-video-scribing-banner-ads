@@ -8,8 +8,8 @@ Author URI: http://www.imwenterprises.com
 Author: IMW Enterprises Ltd.
 Requires at least: 3.4.2
 Tested up to: 3.8
-Stable tag: 1.1
-Version: 1.1
+Stable tag: 1.2
+Version: 1.2
 License: GPLv2 or later
 
 Create attention-grabbing animation ads that knocks on your visitor's screen and shows them your most important message ...in 5 seconds!
@@ -36,14 +36,11 @@ Here are just few of the amazing features:
 - Enable clickable link at the end of the video
 - Enter seconds when you want the video start playing.
 - Specify where you want wizScriber appear.
+- You can add unlimited messages
+- You can use it on more than one page or post
 
-Just copy [wizScribe] and paste it in the page or post you want it to appear.
+Just copy the schortcode and paste it on the pages or posts you want it to appear.
 
-What's in the next free version?
-
-- Ability to create multiple ad campaigns.
-- Add unlimited advertising messages/slides.
-- And many more.
 
 = Learn More About wizMotions  =
 
@@ -69,7 +66,15 @@ How Do I Use It? Specify your settings and just copy [wizScribe] and paste in th
 
 == Changelog ==
 
-= 1.0.1 =
+= 1.2 =
+
+- Ability to create multiple campaigns and copy/paste shortcodes on posts and pages.
+- Add unlimited advertising messages/slides.
+- Major bug fixes
+
+
+
+= 1.1 =
 
 Fixing bugs
 
