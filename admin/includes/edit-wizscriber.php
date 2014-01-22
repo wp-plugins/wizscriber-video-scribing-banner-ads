@@ -233,7 +233,7 @@ if ( ! defined( 'ABSPATH' ) ) // don't load directly
                                     }
                                     
                                     
-                                    if (wizSriberPlayer.currentTime() > 13.5 && i<mes_num) {
+                                    if (wizSriberPlayer.currentTime() > 15.5 && i<mes_num) {
                                             
                                         jQuery(".firsttext").each(function(index){
                                             if (index==(i)){

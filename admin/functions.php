@@ -179,7 +179,7 @@ function wizScribe_main($atts, $content = null){ //ex: [wizScriber id="118" titl
                                     }
                                     
                                     
-                                    if (wizSriberPlayer.currentTime() > 13.5 && i<mes_num) {
+                                    if (wizSriberPlayer.currentTime() > 15.5 && i<mes_num) {
                                             
                                         jQuery(".firsttext").each(function(index){
                                             if (index==(i)){
@@ -211,7 +211,7 @@ function wizScribe_main($atts, $content = null){ //ex: [wizScriber id="118" titl
 
                                     }
 
-                                    if (wizSriberPlayer.currentTime() > 10.2 && wizSriberPlayer.currentTime() < 11) {
+                                    if (wizSriberPlayer.currentTime() > 10.8 && wizSriberPlayer.currentTime() < 11.4) {
                                         jQuery(".secondtext").each(function(index){
                                            if (index==i){
                                             jQuery(this).show().animate({width:'330px'}, 4000);     

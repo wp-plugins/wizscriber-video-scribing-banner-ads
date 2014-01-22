@@ -8,8 +8,8 @@ Author URI: http://www.imwenterprises.com
 Author: IMW Enterprises Ltd.
 Requires at least: 3.4.2
 Tested up to: 3.8
-Stable tag: 1.2
-Version: 1.2
+Stable tag: 1.21
+Version: 1.21
 License: GPLv2 or later
 
 Create attention-grabbing animation ads that knocks on your visitor's screen and shows them your most important message ...in 5 seconds!
@@ -39,8 +39,7 @@ Here are just few of the amazing features:
 - You can add unlimited messages
 - You can use it on more than one page or post
 
-Just copy the schortcode and paste it on the pages or posts you want it to appear.
-
+Just copy the shortcode and paste it in the pages or posts you want whiteboard ads to appear.
 
 = Learn More About wizMotions  =
 
@@ -66,6 +65,12 @@ How Do I Use It? Specify your settings and just copy [wizScribe] and paste in th
 
 == Changelog ==
 
+= 1.21 =
+
+- Added delay between message slides
+- Fixed positioning of the text
+
+
 = 1.2 =
 
 - Ability to create multiple campaigns and copy/paste shortcodes on posts and pages.
@@ -73,8 +78,7 @@ How Do I Use It? Specify your settings and just copy [wizScribe] and paste in th
 - Major bug fixes
 
 
-
-= 1.1 =
+= 1.0.1 =
 
 Fixing bugs
 
