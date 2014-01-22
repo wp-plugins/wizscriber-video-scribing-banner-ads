@@ -162,7 +162,7 @@ function wizScribe_main($atts, $content = null){ //ex: [wizScriber id="118" titl
                                 var i=0;
                                 function onTime(){
                                     
-                                    if (wizSriberPlayer.currentTime() > 15) {
+                                    if (wizSriberPlayer.currentTime() > 16.5) {
                                             
                                         jQuery(".firsttext").each(function(){
                                             
@@ -207,7 +207,7 @@ function wizScribe_main($atts, $content = null){ //ex: [wizScriber id="118" titl
 
                                     if (wizSriberPlayer.currentTime() > 5.8 && wizSriberPlayer.currentTime() < 7) {
 
-                                            jQuery("#paper").animate({marginTop:'-5px'}, 580);
+                                            jQuery("#paper").animate({marginTop:'-20px'}, 580);
 
                                     }
 

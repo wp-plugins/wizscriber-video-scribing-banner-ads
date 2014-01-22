@@ -214,7 +214,7 @@ if ( ! defined( 'ABSPATH' ) ) // don't load directly
                                 var i=0;
                                 function onTime(){
                                     
-                                    if (wizSriberPlayer.currentTime() > 15) {
+                                    if (wizSriberPlayer.currentTime() > 16) {
                                             
                                         jQuery(".firsttext").each(function(){
                                             

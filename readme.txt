@@ -8,8 +8,8 @@ Author URI: http://www.imwenterprises.com
 Author: IMW Enterprises Ltd.
 Requires at least: 3.4.2
 Tested up to: 3.8
-Stable tag: 1.21
-Version: 1.21
+Stable tag: 1.22
+Version: 1.22
 License: GPLv2 or later
 
 Create attention-grabbing animation ads that knocks on your visitor's screen and shows them your most important message ...in 5 seconds!
