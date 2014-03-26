@@ -5,7 +5,7 @@ Plugin URI: http://www.wizMotions.com
 Description: Attention-grabbing widget that knocks on your visitor's screen and shows them your most important message ...in 5 seconds!
 Version: 1.22
 Author: IMW Enterprises
-Author URI: mailto:igorkozar83@gmail.com
+Author URI: mailto:http://www.imwenterprises.com
 License: GPLv2 or later
 */
 
