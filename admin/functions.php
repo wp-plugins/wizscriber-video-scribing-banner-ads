@@ -6,11 +6,16 @@ function add_styles_scripts(){
 	wp_register_script( 'player', WSVSBA_PLUGIN_URL.'/wizScribeSchell/player/video.js');
 	wp_register_style( 'wizScribe-style-hand', WSVSBA_PLUGIN_URL.'/wizScribeSchell/style-hand.css'); 
 	wp_register_style( 'wizScribe-style', WSVSBA_PLUGIN_URL.'/css/wizScribe.css'); 
+	wp_register_style( 'wizScribe-font-style', '//fonts.googleapis.com/css?family=Indie+Flower');
     
-//enqueue
+	//enqueue
 	wp_enqueue_style( 'wizScribe-style-hand' );
 	wp_enqueue_style( 'wizScribe-style' );
+	wp_enqueue_style( 'wizScribe-font-style' );
 	wp_enqueue_script( 'player' );
+	
+	wp_enqueue_script( 'script', WSVSBA_PLUGIN_URL.'/wizScribeSchell/js/script.js', array(), '1.0.0', true );
+	//wp_enqueue_script( 'script-video', WSVSBA_PLUGIN_URL.'/videojs.speed-control.js', array(), '1.0.0', true);
 
 } 
 
@@ -33,6 +38,8 @@ function wizScribe_main($atts, $content = null){ //ex: [wizScriber id="118" titl
 	$finaltextbottom = $wsvsba_wizscriber->wizscriber_finaltextbottom;
 	$actiononclickurl =$wsvsba_wizscriber->wizscriber_actiononclickurl;
 	$whentoappear = $wsvsba_wizscriber->wizscriber_whentoappear;
+    $intervaltoappear   = $wsvsba_wizscriber->wizscriber_intervaltoappear;
+    $videotextTemplate  = $wsvsba_wizscriber->wizscriber_videotextTemplate;
 	$position = $wsvsba_wizscriber->wizscriber_position;
     
     if($position == "right"){
@@ -42,11 +49,25 @@ function wizScribe_main($atts, $content = null){ //ex: [wizScriber id="118" titl
 	}else if($position =="middle"){
 		$positionstyle = "margin-right: auto;right: auto;left: auto;margin-left:auto;";
 	}
-    
+	
     ob_start();
-	?>
-                <script type="text/javascript">
+    ?>
+                <script>
+	                var today_date = new Date();
+	                localStorage.setItem("_wiz_show_settings", "<?php echo $intervaltoappear; ?>");
+	                
+	                if(localStorage.getItem("_wiz_first_site_access")==null){
+	                    localStorage.setItem("_wiz_first_site_access", today_date);
+	                    localStorage.setItem("_wiz_last_browsing_time", today_date);
+	                }
+	                localStorage.setItem("_wiz_current_browsing_time", today_date);
 
+	                if (!sessionStorage.wizSessionStartTime) {
+	                	sessionStorage.wizSessionStartTime = today_date;
+	                }
+		        </script>
+
+                <script type="text/javascript">
 
                 videojs.options.flash.swf = "<?php echo plugins_url()."/wizscriber-video-scribing-banner-ads/wizScribeSchell/" ?>player/video-js.swf"
 
@@ -62,9 +83,33 @@ function wizScribe_main($atts, $content = null){ //ex: [wizScriber id="118" titl
 
                 var time = parseInt("<?php echo $whentoappear; ?>") * 1000;
 
-                setTimeout(function() {startPlay() }, time);
-                jQuery('#wizScribe-wrapper-main').show();
+                if(localStorage.getItem("_wiz_show_settings")=="once" && (localStorage.getItem("_wiz_current_browsing_time")==localStorage.getItem("_wiz_first_site_access"))) {
+                	setTimeout(function() {startPlay() }, time);
+                	jQuery('#wizScribe-wrapper-main').show();
+                	localStorage.setItem("_wiz_last_browsing_time", today_date);
+                }
 
+                var difference = Date.parse(localStorage.getItem("_wiz_current_browsing_time")) - Date.parse(localStorage.getItem("_wiz_last_browsing_time"));
+                var diff_in_sec = Math.round(difference*0.001);
+
+                if(localStorage.getItem("_wiz_show_settings")=="once_per_day" && ((diff_in_sec>86400)||(localStorage.getItem("_wiz_current_browsing_time")==localStorage.getItem("_wiz_first_site_access")))) {
+                	setTimeout(function() {startPlay() }, time);
+                	jQuery('#wizScribe-wrapper-main').show();
+                	localStorage.setItem("_wiz_last_browsing_time", today_date);
+                }
+
+                if(localStorage.getItem("_wiz_show_settings")=="once_per_week" && ((diff_in_sec>604800)||(localStorage.getItem("_wiz_current_browsing_time")==localStorage.getItem("_wiz_first_site_access")))) {
+                	setTimeout(function() {startPlay() }, time);
+                	jQuery('#wizScribe-wrapper-main').show();
+                	localStorage.setItem("_wiz_last_browsing_time", today_date);
+                }
+
+                if(localStorage.getItem("_wiz_show_settings")=="once_per_session" && (localStorage.getItem("_wiz_current_browsing_time")==sessionStorage.wizSessionStartTime)) {
+                	setTimeout(function() {startPlay() }, time);
+                	jQuery('#wizScribe-wrapper-main').show();
+                	localStorage.setItem("_wiz_last_browsing_time", today_date);
+                }
+                
                 jQuery(document).ready(function(){
 
                 jQuery(function() {
@@ -120,10 +165,10 @@ function wizScribe_main($atts, $content = null){ //ex: [wizScriber id="118" titl
                              }
                 ?>
                     
-                <div id = "finaltexttop" ><?php echo $finaltexttop; ?></div>
+                <div id = "finaltexttop" <?php if($videotextTemplate=='ChalkboardSmall'){echo "class='whiteText'";}?> ><?php echo $finaltexttop; ?></div>
                 <img src="<?php echo plugins_url()."/wizscriber-video-scribing-banner-ads/" ?>img/Paper.png" alt="Paper" id = "paper" />
-                <div id = "finaltextbottom" ><?php if($actiononclick == 1){echo '<a id = "finaltextbottoma" href ="http://'.$actiononclickurl.'">';} echo $finaltextbottom; if($actiononclick == 1){echo '</a>'; }?></div>
-                <img src="<?php echo plugins_url()."/wizscriber-video-scribing-banner-ads/wizScribeSchell/" ?>img/coverimg.png" alt="Call Now" id = "covertxtshow" />
+                <div id = "finaltextbottom" <?php if($videotextTemplate=='ChalkboardSmall'){echo "class='whiteText'";}?>><?php if($actiononclick == 1){echo '<a id = "finaltextbottoma" href ="http://'.$actiononclickurl.'">';} echo $finaltextbottom; if($actiononclick == 1){echo '</a>'; }?></div>
+                <img src="<?php echo plugins_url()."/wizscriber-video-scribing-banner-ads/wizScribeSchell/";?>img/<?php echo $videotextTemplate;?>.png" alt="Call Now" id = "covertxtshow" />
                 <div style = "border:none;width:384px;background:transparent;">
                 <div id = "controls-hand">
 
@@ -132,10 +177,10 @@ function wizScribe_main($atts, $content = null){ //ex: [wizScriber id="118" titl
                 <img src="<?php echo plugins_url()."/wizscriber-video-scribing-banner-ads/" ?>img/close.png" alt="Logo" id = "hand-close"/>
                 <img src="<?php echo plugins_url()."/wizscriber-video-scribing-banner-ads/" ?>img/play-icon.png" alt="Play" id = "hand-play" />
                 </div>
-                <a href="http://www.wizmotions.com/" id = "hand-logo-a"><img src="<?php echo plugins_url()."/wizscriber-video-scribing-banner-ads/" ?>img/logo.png" alt="Logo" id = "hand-logo"/></a>
+                <a href="http://www.wizmotions.com/" id = "hand-logo-a"><img id="logoimg" src="<?php echo plugins_url()."/wizscriber-video-scribing-banner-ads/" ?>img/logo.png" alt="Logo" id = "hand-logo"/></a>
                 </div>
 
-                <video id="wizScriber" style = "z-index:-1;" width="384" height="320" data-setup='{"example_option":true}'>
+                <video id="wizScriber" style = "z-index:-1;" width="340" height="320" data-setup='{"example_option":true}'>
 
                  <source src="<?php echo plugins_url()."/wizscriber-video-scribing-banner-ads/wizScribeSchell/" ?>Hand-knocking_v4.flv" type = "video/x-flv" />
 
@@ -200,7 +245,7 @@ function wizScribe_main($atts, $content = null){ //ex: [wizScriber id="118" titl
                                     if (wizSriberPlayer.currentTime() > 7.5 && wizSriberPlayer.currentTime() < 8) {
                                         jQuery(".firsttext").each(function(index){
                                            if (index==i){
-                                            jQuery(this).show().animate({width:'330px'}, 4000);     
+                                            jQuery(this).show().animate({width:'350px'}, 3000);     
                                            } 
                                         });
                                     }
@@ -214,7 +259,7 @@ function wizScribe_main($atts, $content = null){ //ex: [wizScriber id="118" titl
                                     if (wizSriberPlayer.currentTime() > 10.8 && wizSriberPlayer.currentTime() < 11.4) {
                                         jQuery(".secondtext").each(function(index){
                                            if (index==i){
-                                            jQuery(this).show().animate({width:'330px'}, 4000);     
+                                            jQuery(this).show().animate({width:'330px'}, 2640);     
                                            } 
                                         });
                                     }

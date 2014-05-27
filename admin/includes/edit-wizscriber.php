@@ -81,6 +81,8 @@ if ( ! defined( 'ABSPATH' ) ) // don't load directly
                         $finaltextbottom = $wsvsba_wizscriber->wizscriber_finaltextbottom;
                         $actiononclickurl =$wsvsba_wizscriber->wizscriber_actiononclickurl;
                         $whentoappear = $wsvsba_wizscriber->wizscriber_whentoappear;
+                        $intervaltoappear = $wsvsba_wizscriber->wizscriber_intervaltoappear;
+                        $videotextTemplate = $wsvsba_wizscriber->wizscriber_videotextTemplate;
                         $position = $wsvsba_wizscriber->wizscriber_position;
 
                         if($position == "right"){
@@ -172,10 +174,10 @@ if ( ! defined( 'ABSPATH' ) ) // don't load directly
                                 <?php 
                                      }
                                 ?>
-                                <div id = "finaltexttop" ><?php echo $finaltexttop; ?></div>
+                                <div id = "finaltexttop" <?php if($videotextTemplate=='ChalkboardSmall'){echo "class='whiteText'";}?>><?php echo $finaltexttop; ?></div>
                                 <img src="<?php echo plugins_url()."/wizscriber-video-scribing-banner-ads/" ?>img/Paper.png" alt="Paper" id = "paper" />
-                                <div id = "finaltextbottom" ><?php if($actiononclick == 1){echo '<a id = "finaltextbottoma" href "'.$actiononclickurl.'">';} echo $finaltextbottom; if($actiononclick == 1){echo '</a>'; }?></div>
-                                <img src="<?php echo plugins_url()."/wizscriber-video-scribing-banner-ads/wizScribeSchell/" ?>img/coverimg.png" alt="Call Now" id = "covertxtshow" />
+                                <div id = "finaltextbottom" <?php if($videotextTemplate=='ChalkboardSmall'){echo "class='whiteText'";}?>><?php if($actiononclick == 1){echo '<a id = "finaltextbottoma" href "'.$actiononclickurl.'">';} echo $finaltextbottom; if($actiononclick == 1){echo '</a>'; }?></div>
+                                <img src="<?php echo plugins_url()."/wizscriber-video-scribing-banner-ads/wizScribeSchell/";?>img/<?php echo $videotextTemplate;?>.png" alt="Call Now" id = "covertxtshow" />
                                 <div style = "border:none;width:384px;background:transparent;">
                                 <div id = "controls-hand">
 
@@ -184,7 +186,7 @@ if ( ! defined( 'ABSPATH' ) ) // don't load directly
                                 <img src="<?php echo plugins_url()."/wizscriber-video-scribing-banner-ads/" ?>img/close.png" alt="Logo" id = "hand-close"/>
                                 <img src="<?php echo plugins_url()."/wizscriber-video-scribing-banner-ads/" ?>img/play-icon.png" alt="Play" id = "hand-play" />
                                 </div>
-                                <a href="http://www.wizmotions.com/" id = "hand-logo-a"><img src="<?php echo plugins_url()."/wizscriber-video-scribing-banner-ads/" ?>img/logo.png" alt="Logo" id = "hand-logo"/></a>
+                                <a href="http://www.wizmotions.com/" id = "hand-logo-a"><img id="logoimg" src="<?php echo plugins_url()."/wizscriber-video-scribing-banner-ads/" ?>img/logo.png" alt="Logo" id = "hand-logo"/></a>
                                 </div>
 
                                 <video id="wizScriber" style = "z-index:-1;" width="384" height="320" data-setup='{"example_option":true}'>

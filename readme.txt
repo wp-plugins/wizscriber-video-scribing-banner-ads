@@ -8,8 +8,8 @@ Author URI: http://www.imwenterprises.com
 Author: IMW Enterprises Ltd.
 Requires at least: 3.4.2
 Tested up to: 3.8.1
-Stable tag: 1.22
-Version: 1.22
+Stable tag: 1.23
+Version: 1.23
 License: GPLv2 or later
 
 Create attention-grabbing animation ads that knocks on your visitor's screen and shows them your most important message ...in 5 seconds!
@@ -64,6 +64,14 @@ How Do I Use It? Specify your settings and just copy [wizScribe] and paste in th
 
 
 == Changelog ==
+
+= 1.23 =
+
+- Added 2 new templates
+- Fix shaky fonts and make the letters appear more natural
+- Control how often a visitor would see the ad.
+- Fixed major bugs 
+
 
 = 1.21 =
 

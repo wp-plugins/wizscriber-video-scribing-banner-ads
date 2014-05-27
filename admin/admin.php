@@ -53,9 +53,11 @@ function wsvsba_load_wizscriber_admin() {
         $wizscriber_finaltextbottom = strip_tags(trim($_POST['finaltextbottom']));
         $wizscriber_actiononclickurl = strip_tags(trim($_POST['actiononclickurl']));
         $wizscriber_whentoappear = strip_tags(trim($_POST['whentoappear']));
+        $wizscriber_intervaltoappear = strip_tags(trim($_POST['intervaltoappear']));
+        $wizscriber_videotextTemplate   = strip_tags(trim($_POST['videotextTemplate']));
         $wizscriber_position = strip_tags(trim($_POST['position']));
                 
-        $props = compact('wizscriber_firsttext', 'wizscriber_secondtext', 'wizscriber_actiononclick', 'wizscriber_finaltexttop', 'wizscriber_finaltextbottom', 'wizscriber_actiononclickurl',  'wizscriber_whentoappear', 'wizscriber_position');
+        $props = compact('wizscriber_firsttext', 'wizscriber_secondtext', 'wizscriber_actiononclick', 'wizscriber_finaltexttop', 'wizscriber_finaltextbottom', 'wizscriber_actiononclickurl',  'wizscriber_whentoappear', 'wizscriber_intervaltoappear', 'wizscriber_videotextTemplate',' wizscriber_position');
         
         foreach ((array) $props as $key => $prop)
             $wizscriber->{$key} = $prop;

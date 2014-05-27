@@ -66,7 +66,7 @@ if(!class_exists('WSVSBA_wizScriber')):
             }
 
             function get_properties() {
-                $prop_names = array('wizscriber_firsttext', 'wizscriber_secondtext', 'wizscriber_actiononclick', 'wizscriber_finaltexttop', 'wizscriber_finaltextbottom', 'wizscriber_actiononclickurl',  'wizscriber_whentoappear', 'wizscriber_position');
+                $prop_names = array('wizscriber_firsttext', 'wizscriber_secondtext', 'wizscriber_actiononclick', 'wizscriber_finaltexttop', 'wizscriber_finaltextbottom', 'wizscriber_actiononclickurl',  'wizscriber_whentoappear', 'wizscriber_intervaltoappear', 'wizscriber_videotextTemplate', 'wizscriber_position');
                 //$prop_names = array('firsttext', 'secondtext', 'actiononclick', 'finaltexttop', 'finaltextbottom', 'actiononclickurl', 'whentoappear', 'position');
                 //$prop_names = array('coupon_desc', 'coupon_url');
                 $properties = array();
