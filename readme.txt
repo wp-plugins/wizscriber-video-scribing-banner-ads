@@ -1,22 +1,22 @@
-ï»¿=== wizScriberâ„¢ Whiteboard Animation Software - Create Doodle Ads In Few Clicks ===
+=== wizScriber™ Whiteboard Animation Software - Create Doodle Ads In Few Clicks ===
 
 Contributors: socratous139
-Plugin Name: wizScriberâ„¢ Whiteboard Animation Software - Create Doodle Ads In Few Clicks
+Plugin Name: wizScriber™ Whiteboard Animation Software - Create Doodle Ads In Few Clicks
 Plugin URI: http://www.wizMotions.com
 Tags: whiteboard animation, video scribing, video, scribe, ad, ads, advertise, advertising, advertisment, marketing, banner, banners, page, plugin, Post, promotion, sidebar, tool, widget, software, doodle, animation, admin, audio, content, create, creative, creativity, CSS, custom, design, download, easy, edit, editor, embed, filters, flexible, free, generator, google, html, html5, image, images, link, links, media, modern, multimedia, music, page, photos, picture, pictures, plugins, posts, Share, simple, twitter, url, video, visual, widgets, wordpress
 Author URI: http://www.imwenterprises.com
 Author: IMW Enterprises Ltd.
 Requires at least: 3.4.2
-Tested up to: 3.8.1
-Stable tag: 1.23
-Version: 1.23
+Tested up to: 3.9
+Stable tag: 1.24
+Version: 1.24
 License: GPLv2 or later
 
 Create attention-grabbing animation ads that knocks on your visitor's screen and shows them your most important message ...in 5 seconds!
 
 == Description ==
 
-wizScriber is a unique plugin to create engaging whiteboard animated video messages quickly and easily without technical or design skills. Itâ€™s simple, handy and you can use it to grab your visitorsâ€™ attention. Best of all, we make this video scribing plugin available for you free.
+wizScriber is a unique plugin to create engaging whiteboard animated video messages quickly and easily without technical or design skills. It’s simple, handy and you can use it to grab your visitors’ attention. Best of all, we make this video scribing plugin available for you free.
 
 You can use it to:
 
@@ -65,13 +65,12 @@ How Do I Use It? Specify your settings and just copy [wizScribe] and paste in th
 
 == Changelog ==
 
-= 1.23 =
+1.24
 
 - Added 2 new templates
 - Fix shaky fonts and make the letters appear more natural
 - Control how often a visitor would see the ad.
-- Fixed major bugs 
-
+- Fixed major bugs
 
 = 1.21 =
 
