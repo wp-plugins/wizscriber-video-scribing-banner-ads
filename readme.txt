@@ -7,9 +7,9 @@ Tags: whiteboard animation, video scribing, video, scribe, ad, ads, advertise, a
 Author URI: http://www.imwenterprises.com
 Author: IMW Enterprises Ltd.
 Requires at least: 3.4.2
-Tested up to: 4.0.1
-Stable tag: 1.24
-Version: 1.24
+Tested up to: 4.1
+Stable tag: 1.25
+Version: 1.25
 License: GPLv2 or later
 
 Create attention-grabbing animation ads that knocks on your visitor's screen and shows them your most important message ...in 5 seconds!
