@@ -7,7 +7,7 @@ Tags: whiteboard animation, video scribing, video, scribe, ad, ads, advertise, a
 Author URI: http://www.imwenterprises.com
 Author: IMW Enterprises Ltd.
 Requires at least: 3.4.2
-Tested up to: 4.1
+Tested up to: 4.2
 Stable tag: 1.25
 Version: 1.25
 License: GPLv2 or later
